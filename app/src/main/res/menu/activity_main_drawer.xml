@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_menu_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"/>
+
+    </group>
+<!-- Introduction -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_introduction"
+            android:icon="@mipmap/ic_find_next_holo_light"
+            android:title="Introduction"/>
+    </group>
+
+    <group
+        android:id="@+id/nav_introduction_details"
+        android:checkableBehavior="single"
+        android:icon="@mipmap/ic_find_next_holo_light"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_introduction_app_fundamentals"
+            android:title="App Fundamentals"/>
+        <item
+            android:id="@+id/nav_introduction_device_compatibility"
+            android:title="Device Compatibility"/>
+        <item
+            android:id="@+id/nav_introduction_system_permissions"
+            android:title="System Permissions"/>
+    </group>
+
+</menu>
